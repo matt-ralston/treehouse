@@ -9,3 +9,18 @@ playlist.add(walkingOnSunshine);
 var playlistElement = document.getElementById("playlist");
 
 playlist.renderInElement(playlistElement);
+
+var playButton = document.getElementById("play");
+playButton.onclick = function() {
+  playlist.play();
+}
+
+var nextButton = document.getElementById("next");
+nextButton.onclick = function() {
+  playlist.next();
+}
+
+var stopButton = document.getElementById("stop");
+stopButton.onclick = function() {
+  playlist.stop();
+}
