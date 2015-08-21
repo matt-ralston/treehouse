@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Worldly people!</h1>
+
+    <script>
+
+      function getRandomNumber() {
+        var randomNumber = Math.floor(Math.random() * 6 ) + 1;
+        return randomNumber;
+      }
+      var dieRoll = getRandomNumber;
+      getRandomNumber();
+
+
+      //Another way to write the abover function is with a function expression.
+      //This is an anonymous function bc there is no function name after the word function
+      //Instead the function is stored in the variable alertAnotherRandom
+      var getAnotherRandomNumber = function() {
+        var anotherRandomNumber = Math.floor(Math.random() * 6 ) + 1;
+        return anotherRandomNumber;
+      };
+      var dieRoll2 = getAnotherRandomNumber;
+      getAnotherRandomNumber();
+
+
+//Javascript functions can accept information, called an ARGUMENT, which you send to the function.
+//ARGUMENTS are stored in a Variable, called a PARAMETER that you can use inside the function.
+//To do this, you add a parameter name inside the parantheses when creating a function.
+//The parameter works just like a variable. You follow the same rules when naming a parameter as you do when naming a variable.
+//You can use the parameter inside your function just like you can any variable.
+//
+
+
+    </script>
+  </body>
+</html>

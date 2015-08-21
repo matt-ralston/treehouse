@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum blah shmack what it do yo.</p>
+    <script>
+
+      "<p>There once was a [adjective] coder who wanted to [verb] the [noun]</p>"
+
+      var questions = 3;
+      var questionsLeft = ' [' + questions + ' questions left]';
+      var adjective = prompt('Please type an adjective' + questionsLeft);
+
+      questions -= 1;
+      questionsLeft = ' [' + questions + ' questions left]';
+      var verb = prompt('Type a verb' + questionsLeft);
+
+      questions -= 1;
+      questionsLeft = ' [' + questions + ' question left]';
+      var noun = prompt('type a noun' + questionsLeft);
+
+      alert('All done.');
+      var sentence = "<h1>There once was a " + adjective;
+      sentence += " coder who wanted to " + verb;
+      sentence += " the " + noun + '</h1>';
+
+
+      document.write(sentence);
+      console.log(sentence);
+
+
+      document.write("<p>omg, like, pink is my favorite color.</p>");
+    </script>
+  </body>
+</html>

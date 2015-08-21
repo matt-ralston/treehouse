@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <h1>Conditional Challenge Quiz</h1>
+    <p>Answer the 5 questions to see if you earn a medal!</p>
+    <script>
+/*
+Intructions for the assignment
+1. Ask the user 5 questions.
+2. Keep track of how many questions the user answered correctly
+3. Show the user the final message after the quiz showing the user how many questions he or she got correct.
+4. Rank the player by assigning a gold/silver/bronze/no crown.
+*/
+        //quiz begins with 0 answers correct.
+        var correct = 0;
+
+        //ask questions
+        var question1 = prompt('What is the capitol of Oregon?');
+        if (question1.toUpperCase() === 'SALEM') {
+            correct += 1;
+        }
+        var question2 = prompt('What country is home to Christ the Redeemer?');
+        if (question2.toUpperCase() === 'BRAZIL') {
+            correct += 1;
+        }
+        var question3 = prompt('Who was the first US President?');
+        if (question3.toUpperCase() === 'GEORGE WASHINGTON') {
+            correct += 1;
+        }
+        var question4 = prompt('What country joined forces with Germany and Japan to fight against the Allies in WWII?');
+        if (question4.toUpperCase() === 'ITALY') {
+            correct += 1;
+        }
+        var question5 = prompt('Who is the coolest person on earth?');
+        if (question5.toUpperCase() === 'MATT RALSTON') {
+            correct += 1;
+        }
+
+        //output results
+        document.write("<p>You got " + correct + " out of 5 questions correct.</p>");
+
+        //output rank
+        if ( correct === 5 ) {
+            document.write('<p>You have earned a gold medal!</p>')
+        }   else if ( correct >= 3 ) {
+            document.write('<p>You have earned a silver medal!</p>')
+        }   else if (correct === 2 ) {
+            document.write('<p>You have earned a bronze medal!</p>')
+        }   else {
+            document.write('<p>No medals for you. Hit the books!</p>')
+        }
+
+
+    </script>
+  </body>
+</html>

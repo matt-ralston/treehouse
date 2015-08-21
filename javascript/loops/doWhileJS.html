@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <h1>Hello!</h1>
+
+    <script>
+
+      var randomNumber = getRandomNumber(10);
+      var guess;
+      var guessCount = 0;
+      var correctGuess = false;
+
+      function getRandomNumber( upper ) {
+        var num = Math.floor(Math.random() * upper ) + 1;
+        return num;
+      }
+
+      do {
+        guess = prompt('I am thinking of a number between 1 and 10. Take a guess.');
+        guessCount += 1;
+        if (parseInt(guess) === randomNumber) {
+          correctGuess = true;
+        }
+      } while ( ! correctGuess )
+        document.write('It took you ' + guessCount + ' tries to guess the number ' + randomNumber);
+
+
+
+
+
+      // while ( guess !== randomNumber ) {
+      //   guess = getRandomNumber( upper );
+      //   attempts +=1;
+      // }
+      // document.write('<p>The random number was: ' + randomNumber + '.</p>')
+      // document.write('<p>It took the computer ' + attempts + ' attempts.</p>')
+
+
+
+
+    </script>
+  </body>
+</html>

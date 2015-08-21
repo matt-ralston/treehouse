@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Worldly people!</h1>
+
+    <script>
+    var inputNumber1 = prompt('Pick a number between 1 and 10.');
+    var bottomNumber = parseInt(inputNumber1);
+
+    var inputNumber2 = prompt('Pick a number between 20 and 30.');
+    var topNumber = parseInt(inputNumber2);
+
+    var randomNumber = Math.floor(Math.random() * (topNumber - bottomNumber + 1)) + bottomNumber;
+
+    var message = "<p>" + randomNumber + " is a random number between " + bottomNumber + " and " + topNumber + ".</p>";
+    document.write(message);
+
+
+
+    </script>
+  </body>
+</html>
