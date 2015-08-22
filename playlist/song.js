@@ -1,8 +1,5 @@
-function Song(title, artist, duration) {
-  this.title = title;
+function Song(artist) {
   this.artist = artist;
-  this.duration = duration;
-  this.isPlaying = false;
 }
 
 Song.prototype.play = function() {
